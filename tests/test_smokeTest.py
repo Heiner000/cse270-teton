@@ -85,9 +85,7 @@ class TestSmokeTest:
         assert len(elements) > 0
 
     def test_logoHeading(self):
-        self.driver.get(
-            "http://127.0.0.1:5500/teton/1.6/admin.html/teton/1.6/index.html"
-        )
+        self.driver.get("http://127.0.0.1:5500/teton/1.6/index.html")
         elements = self.driver.find_elements(By.CSS_SELECTOR, ".header-logo img")
         assert len(elements) > 0
         elements = self.driver.find_elements(By.CSS_SELECTOR, ".header-title > h1")
